@@ -1,0 +1,17 @@
+{
+  "dataset": "opixray",
+  "model": "configs/models/xraysafe_yolo11n_opt_spatial_resgated.yaml",
+  "pretrained": "path/to/cgoa_or_yolo11n_checkpoint.pt",
+  "data_yaml": "path/to/converted/opixray.yaml",
+  "epochs": 100,
+  "imgsz": 640,
+  "batch": 16,
+  "device": "0",
+  "workers": 8,
+  "seed": 42,
+  "patience": 30,
+  "val_ratio": 0.1,
+  "cos_lr": true,
+  "count_conf": 0.25,
+  "count_iou": 0.5
+}

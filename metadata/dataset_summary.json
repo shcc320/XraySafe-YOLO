@@ -1,0 +1,27 @@
+{
+  "dataset": "OPIXray",
+  "format": "official_opixray_converted_to_yolo",
+  "classes": [
+    "folding_knife",
+    "straight_knife",
+    "scissor",
+    "utility_knife",
+    "multi_tool_knife"
+  ],
+  "splits": {
+    "train_images": 6398,
+    "validation_images": 711,
+    "test_images": 1776
+  },
+  "occlusion_subsets": [
+    "OL1",
+    "OL2",
+    "OL3"
+  ],
+  "validation_split_seed": 42,
+  "notes": [
+    "Raw OPIXray images and original annotations are not redistributed in this package.",
+    "Use scripts/prepare_opixray.py to convert the official OPIXray release to YOLO format.",
+    "Update local dataset paths before training or evaluation."
+  ]
+}
